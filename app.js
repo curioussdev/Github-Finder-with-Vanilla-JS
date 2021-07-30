@@ -18,7 +18,7 @@
         const profile = await profileResponse.json();
         const repos = await reposResponse.json();
 
-        return {profile, repos}
+        return {profile, repos};
     }
 
     function showProfile(user) {
@@ -83,9 +83,7 @@
         document.getElementById("repos").innerHTML = output;
 
 
-    }
-
-
+    };
     search.addEventListener("keyup", (e) => {
         const user = e.target.value;
         if(user.length > 0) {
