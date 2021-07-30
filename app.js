@@ -20,9 +20,7 @@
 
         return {profile, repos};
     }
-
     function showProfile(user) {
-    
         profile.innerHTML = `
         <div class="row mt-3">
         <div class="col-md-4">
@@ -53,7 +51,6 @@
     </div>
         `;
     };
-
     function showRepos(repos) {
         let output = '';
 
@@ -79,10 +76,7 @@
             </div>
             `;
         });
-
         document.getElementById("repos").innerHTML = output;
-
-
     };
     search.addEventListener("keyup", (e) => {
         const user = e.target.value;
@@ -91,10 +85,7 @@
                  showProfile(res.profile);
                  showRepos(res.repos)
             });
-            
         };
-
-        
     });
 
 }) ();
